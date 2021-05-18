@@ -9,7 +9,7 @@ url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
 filename = "best.pt"
 urlretrieve(url,filename)
 
-urll = ("http://dl.dropboxusercontent.com/s/1mosvbcftjgpm1y/WhatsApp%20Image%202021-03-31%20at%2022.59.16.jpeg?raw=1")
+urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
 filenamee = "1.png"
 urlretrieve(urll,filenamee)
 st.image(filenamee)
