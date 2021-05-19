@@ -2,15 +2,21 @@
 import streamlit as st
 from PIL import Image
 from urllib.request import urlretrieve
+import requests
 from fastai.vision.widgets import *
 from fastai.vision.all import *
 import cv2
 
 
 
-url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
-filename = "best.pt"
-urlretrieve(url,filename)
+#url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
+#filename = "best.pt"
+#urlretrieve(url,filename)
+
+
+r = requests.get('http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1')
+with open('best.pt','wb') as f:
+  f.write(r.content)
 
 
 urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
