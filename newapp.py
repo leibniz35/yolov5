@@ -49,9 +49,9 @@ else:
    
     
     model.results = model(img_array, size=640)
-    model.results.save("runs/hub/exp")
+    model.results.save("sample_data")
     #model.results.save()
-    st.image("runs/hub/exp/image0.jpg")
+    st.image("sample_data/image0.jpg")
   
     liste = []
     liste1 = []
