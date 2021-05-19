@@ -9,9 +9,8 @@ import cv2
 
 
 url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
-
-urlretrieve(url,"best.pt")
-
+filename = "best.pt"
+urlretrieve(url,filename)
 
 
 urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
