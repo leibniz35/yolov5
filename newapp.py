@@ -20,8 +20,8 @@ import streamlit as st
 
 
 url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
-
-urlretrieve(url,"best.pt")
+filename = "best.pt"
+urlretrieve(url,filename)
 
 
 
@@ -44,7 +44,7 @@ if uploaded_file is None:
 else:
     image = Image.open(uploaded_file)
     img_array = np.array(image)
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path="best.pt")
+    model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
 
    
     
