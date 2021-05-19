@@ -1,22 +1,28 @@
-
 import streamlit as st
-from PIL import Image
-from urllib.request import urlretrieve
 import requests
+import base64
+import io
+from PIL import Image
+import glob
+from base64 import decodebytes
+from io import BytesIO
+import numpy
+import matplotlib.pyplot as plt
+import torch
+from urllib.request import urlretrieve
 from fastai.vision.widgets import *
 from fastai.vision.all import *
 import cv2
-
+from contextlib import contextmanager, redirect_stdout
+from io import StringIO
+from time import sleep
+import streamlit as st
 
 
 url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
 filename = "best.pt"
 urlretrieve(url,filename)
 
-
-#r = requests.get('http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1')
-#with open('best.pt','wb') as f:
-  #f.write(r.content)
 
 
 urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
@@ -43,8 +49,9 @@ else:
    
     
     model.results = model(img_array, size=640)
-    model.results.save()
-    st.image("runs/hub/exp/image0.jpg")
+    model.results.save("/content/yolov5/results")
+    #model.results.save()
+    st.image("/content/yolov5/results/image0.jpg")
   
     liste = []
     liste1 = []
