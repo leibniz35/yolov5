@@ -21,7 +21,7 @@ import streamlit as st
 
 url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
 
-urlretrieve(url,filename)
+urlretrieve(url,"best.pt")
 
 
 
