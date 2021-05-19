@@ -9,14 +9,14 @@ import cv2
 
 
 
-#url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
-#filename = "best.pt"
-#urlretrieve(url,filename)
+url = ("http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1")
+filename = "best.pt"
+urlretrieve(url,filename)
 
 
-r = requests.get('http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1')
-with open('best.pt','wb') as f:
-  f.write(r.content)
+#r = requests.get('http://dl.dropboxusercontent.com/s/fkdy4rbf8g8wm2s/best.pt?raw=1')
+#with open('best.pt','wb') as f:
+  #f.write(r.content)
 
 
 urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
@@ -38,7 +38,7 @@ if uploaded_file is None:
 else:
     image = Image.open(uploaded_file)
     img_array = np.array(image)
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path="best.pt")
+    model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
 
    
     
