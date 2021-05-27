@@ -45,10 +45,11 @@ else:
     image = Image.open(uploaded_file)
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
+    model.conf = 0.75
 
    
     
-    model.results = model(img_array, size=640)
+    model.results = model(img_array, size=512)
     model.results.save("yolov5/results")
     #model.results.save()
     st.image("yolov5/results/image0.jpg")
