@@ -1,22 +1,11 @@
 import streamlit as st
-import requests
-import base64
-import io
 from PIL import Image
-import glob
-from base64 import decodebytes
-from io import BytesIO
-import numpy
-import matplotlib.pyplot as plt
-import torch
 from urllib.request import urlretrieve
 from fastai.vision.widgets import *
 from fastai.vision.all import *
-import cv2
-from contextlib import contextmanager, redirect_stdout
-from io import StringIO
-from time import sleep
-import streamlit as st
+
+
+
 
 
 url = ("http://dl.dropboxusercontent.com/s/w20vwd3bu7fo4ut/best.pt?raw=1")
