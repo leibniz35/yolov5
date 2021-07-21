@@ -18,7 +18,7 @@ urlretrieve(url,filename)
 #filenamee = "1.png"
 #urlretrieve(urll,filenamee)
 #st.image(filenamee)
-st.write('# LÖSEMİ TESPİT PLATFORMU ')
+st.write('# LEUKEMIA DETECTION Platform ')
 
 
 uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
@@ -61,7 +61,7 @@ else:
                 liste0.append(k)
 
 
-    st.write("Saptanan hücre sayısı:")
-    st.write("Beyaz Kan Hücresi:",len(liste0))
-    st.write("Kırmızı Kan hücresi",len(liste1))
-    st.write("Blast hücresi",len(liste2))
+    st.write("Number of cells detected:")
+    st.write("White Blood Cell:",len(liste0))
+    st.write("Red Blood Cell:",len(liste1))
+    st.write("Blast Cell",len(liste2))
