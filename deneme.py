@@ -62,7 +62,7 @@ else:
                 liste0.append(k)
 
 
-    st.write("Number of cells detected:")
-    st.write("White Blood Cell:",len(liste0))
-    st.write("Red Blood Cell:",len(liste1))
-    st.write("Blast Cell",len(liste2))
+    #st.write("Number of cells detected:")
+    #st.write("White Blood Cell:",len(liste0))
+    #st.write("Red Blood Cell:",len(liste1))
+    #st.write("Blast Cell",len(liste2))
