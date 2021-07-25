@@ -35,6 +35,7 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     model.conf = 0.75
+    #model.classes = 1
 
 
    
