@@ -35,7 +35,7 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     model.conf = 0.75
-    #model.classes = 1
+    model.classes = 2
 
 
    
@@ -63,7 +63,7 @@ else:
                 liste0.append(k)
 
 
-    #st.write("Number of cells detected:")
+    st.write("Number of cells detected:")
     #st.write("White Blood Cell:",len(liste0))
     #st.write("Red Blood Cell:",len(liste1))
-    #st.write("Blast Cell",len(liste2))
+    st.write("Blast Cell",len(liste2))
