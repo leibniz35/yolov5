@@ -78,7 +78,7 @@ else:
         st.image("yolov5/results/image0.jpg")
         
         
-model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
+    model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
         
 
 
