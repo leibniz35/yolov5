@@ -37,7 +37,7 @@ else:
     
  
 
-model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01) 7
+model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
 
 
 wbc = st.sidebar.button("wbc")
