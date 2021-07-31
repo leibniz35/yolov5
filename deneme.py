@@ -40,7 +40,7 @@ else:
     #model.results.save("yolov5/results")
     #model.results.save()
     ######
-  if st.sidebar.button("rbc"):
+    if st.sidebar.button("rbc"):
         model.classes = 1
         model.results = model(img_array, size=512)
         model.results.save("yolov5/results")
