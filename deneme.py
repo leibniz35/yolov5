@@ -35,7 +35,7 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
-    model.classes = st.sidebar.selectbox("Search for which objects?", summary.columns, 2,1,0)
+    model.classes = st.sidebar.selectbox("Search for which objects?", 2,1,0)
     
 
 
