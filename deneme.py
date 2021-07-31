@@ -22,7 +22,17 @@ st.write('# LEUKEMIA DETECTION PLATFORM ')
 
 
 uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
-
+@st.cache
+    def create_summary(metadata):
+        one_hot_encoded = pd.get_dummies(metadata[["frame", "label"]], columns=["label"])
+        summary = one_hot_encoded.groupby(["frame"]).sum().rename(columns={
+            "label_biker": "biker",
+            "label_car": "car",
+            "label_pedestrian": "pedestrian",
+            "label_trafficLight": "traffic light",
+            "label_truck": "truck"
+        })
+        return summary
 
 
 if uploaded_file is None:
@@ -35,7 +45,7 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
-    model.classes = st.sidebar.selectbox("Search for which objects?", 2,1,0)
+    
     
 
 
