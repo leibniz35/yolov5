@@ -40,43 +40,44 @@ else:
     #model.results.save("yolov5/results")
     #model.results.save()
     ######
-    
-    if st.sidebar.button("rbc"):
-        model.classes = 1
-        model.results = model(img_array, size=512)
-        model.results.save("yolov5/results")
-        st.image("yolov5/results/image0.jpg")
+    if st.sidebar.button("Select"):
+        
+        if st.sidebar.button("rbc"):
+            model.classes = 1
+            model.results = model(img_array, size=512)
+            model.results.save("yolov5/results")
+            st.image("yolov5/results/image0.jpg")
         
   
-    elif st.sidebar.button("wbc"):
-        model.classes = 0
-        model.results = model(img_array, size=512)
-        model.results.save("yolov5/results")
-        st.image("yolov5/results/image0.jpg")
+        elif st.sidebar.button("wbc"):
+            model.classes = 0
+            model.results = model(img_array, size=512)
+            model.results.save("yolov5/results")
+            st.image("yolov5/results/image0.jpg")
  
 
-    elif st.sidebar.button("blast"):
-        model.classes = 2
-        model.results = model(img_array, size=512)
-        model.results.save("yolov5/results")
-        st.image("yolov5/results/image0.jpg")
+        elif st.sidebar.button("blast"):
+            model.classes = 2
+            model.results = model(img_array, size=512)
+            model.results.save("yolov5/results")
+            st.image("yolov5/results/image0.jpg")
         
         
         
         
-    elif st.sidebar.button("wbc and blast"):
-        model.classes = 2,0
-        model.results = model(img_array, size=512)
-        model.results.save("yolov5/results")
-        st.image("yolov5/results/image0.jpg")
+        elif st.sidebar.button("wbc and blast"):
+            model.classes = 2,0
+            model.results = model(img_array, size=512)
+            model.results.save("yolov5/results")
+            st.image("yolov5/results/image0.jpg")
         
         
         
-    elif st.sidebar.button("All"):
-        model.classes = 0,1,2
-        model.results = model(img_array, size=512)
-        model.results.save("yolov5/results")
-        st.image("yolov5/results/image0.jpg")
+        elif st.sidebar.button("All"):
+            model.classes = 0,1,2
+            model.results = model(img_array, size=512)
+            model.results.save("yolov5/results")
+            st.image("yolov5/results/image0.jpg")
         
         
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
