@@ -23,7 +23,12 @@ st.write('# LEUKEMIA DETECTION PLATFORM ')
 
 uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
 
-
+model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
+    
+    
+    if wbc:
+        wbc = st.sidebar.button("wbc")
+        model.classes = 1
 
 
 
@@ -36,8 +41,7 @@ else:
     image = Image.open(uploaded_file)
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
-    model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
-    re = st.sidebar.button("wbc")
+    
     
     
     
