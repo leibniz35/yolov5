@@ -35,24 +35,6 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     
- 
-
-model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
-
-
-#wbc = st.sidebar.button("wbc")
-#if wbc:
-   
-    #model.classes = 1
-
-    
-    
-    
-    
-
-
-   
-    
     model.results = model(img_array, size=512)
     model.results.save("yolov5/results")
     #model.results.save()
@@ -80,3 +62,13 @@ model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
     st.write("White Blood Cell:",len(liste0))
     st.write("Red Blood Cell:",len(liste1))
     st.write("Blast Cell",len(liste2))
+    
+    
+    #model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
+
+
+#wbc = st.sidebar.button("wbc")
+#if wbc:
+   
+    #model.classes = 1
+
