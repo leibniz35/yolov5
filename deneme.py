@@ -40,10 +40,12 @@ else:
     #model.results.save()
     ######
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
-    wbc = st.sidebar.button("wbc")
-    if wbc:
+    if st.sidebar.button("wbc"):
         model.classes = 1
         st.image("yolov5/results/image0.jpg")
+
+ 
+       
  
   
     liste = []
