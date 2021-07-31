@@ -54,7 +54,7 @@ else:
         st.image("yolov5/results/image0.jpg")
  
 
-     elif st.sidebar.button("blast"):
+    elif st.sidebar.button("blast"):
         model.classes = 2
         model.results = model(img_array, size=512)
         model.results.save("yolov5/results")
