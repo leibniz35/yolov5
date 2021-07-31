@@ -25,6 +25,8 @@ uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
 
 
 
+
+
 if uploaded_file is None:
     # Default image.
     url = 'https://github.com/matthewbrems/streamlit-bccd/blob/master/BCCD_sample_images/BloodImage_00038_jpg.rf.6551ec67098bc650dd650def4e8a8e98.jpg?raw=true'
@@ -35,6 +37,9 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
+    re = st.sidebar.button("wbc")
+    
+    
     
     
 
