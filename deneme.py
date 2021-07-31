@@ -43,7 +43,8 @@ else:
     wbc = st.sidebar.button("wbc")
     if wbc:
         model.classes = 1
-    st.image("yolov5/results/image0.jpg")
+        st.image("yolov5/results/image0.jpg")
+ 
   
     liste = []
     liste1 = []
