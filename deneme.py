@@ -35,13 +35,15 @@ else:
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
     
-    model.results = model(img_array, size=512)
-    model.results.save("yolov5/results")
+    #model.results = model(img_array, size=512)
+    #model.results.save("yolov5/results")
     #model.results.save()
     ######
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
     if st.sidebar.button("wbc"):
         model.classes = 1
+        model.results = model(img_array, size=512)
+        model.results.save("yolov5/results")
         st.image("yolov5/results/image0.jpg")
 
  
