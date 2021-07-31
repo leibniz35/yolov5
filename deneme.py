@@ -26,9 +26,9 @@ uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
 model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
     
     
-    if wbc:
-        wbc = st.sidebar.button("wbc")
-        model.classes = 1
+if wbc:
+    wbc = st.sidebar.button("wbc")
+    model.classes = 1
 
 
 
