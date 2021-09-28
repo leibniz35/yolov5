@@ -19,7 +19,7 @@ filenamee = "1.png"
 urlretrieve(urll,filenamee)
 st.image(filenamee)
 st.write('# LEUKEMIA DETECTION PLATFORM ')
-st.write('# OSMAN GÜLTEKİN ')
+st.write('# BURCU ❤️')
 
 
 
