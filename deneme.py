@@ -19,6 +19,8 @@ filenamee = "1.png"
 urlretrieve(urll,filenamee)
 st.image(filenamee)
 st.write('# LEUKEMIA DETECTION PLATFORM ')
+st.write('# OSMAN GÜLTEKİN ')
+
 
 
 uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
