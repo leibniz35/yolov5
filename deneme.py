@@ -42,6 +42,7 @@ else:
     model.results = model(img_array, size=512)
     model.results.save("yolov5/results")
     model.results.save()
+    st.image("yolov5/results/image0.jpg")
     ######
    
         
