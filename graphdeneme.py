@@ -5,7 +5,12 @@ from fastai.vision.widgets import *
 from fastai.vision.all import *
 
 
-
+st.set_page_config(
+    page_title="# STROKE DETECTION PLATFORM",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 
 url = ("http://dl.dropboxusercontent.com/s/9jmlqe43bxv3p7y/best.pt?raw=1")
