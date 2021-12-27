@@ -6,7 +6,7 @@ from fastai.vision.all import *
 
 
 st.set_page_config(
-    page_title="# STROKE DETECTION PLATFORM",
+    page_title="# GRAPHICS",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded"
