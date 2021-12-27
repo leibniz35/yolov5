@@ -12,8 +12,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+#http://dl.dropboxusercontent.com/s/iz565sj91brcvbo/bestduration.pt?raw=1 5m durationlı
 
-url = ("http://dl.dropboxusercontent.com/s/iz565sj91brcvbo/bestduration.pt?raw=1")
+#bu 5s duration
+url = ("http://dl.dropboxusercontent.com/s/ggvmsxii9bqpm9y/best5s.pt?raw=1")
 filename = "best.pt"
 urlretrieve(url,filename)
 
