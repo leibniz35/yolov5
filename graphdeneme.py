@@ -8,9 +8,10 @@ from fastai.vision.all import *
 
 
 
-url = ("http://dl.dropboxusercontent.com/s/qfnte9dbtbpn06b/best.pt?raw=1")
+url = ("http://dl.dropboxusercontent.com/s/9jmlqe43bxv3p7y/best.pt?raw=1")
 filename = "best.pt"
 urlretrieve(url,filename)
+
 
 
 
