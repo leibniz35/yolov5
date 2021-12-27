@@ -79,7 +79,7 @@ else:
 
 
     st.write("Number of ----- detected:")
-    st.write(":",len(liste0))
-    st.write(":",len(liste1))
+    st.write("Inhale:",len(liste0))
+    st.write("Exhale:",len(liste1))
     st.write(":",len(liste2))
     
