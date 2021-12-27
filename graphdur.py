@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 
-url = ("http://dl.dropboxusercontent.com/s/iz565sj91brcvbo/best.pt?raw=1")
+url = ("http://dl.dropboxusercontent.com/s/iz565sj91brcvbo/bestduration.pt?raw=1")
 filename = "best.pt"
 urlretrieve(url,filename)
 
