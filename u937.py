@@ -9,7 +9,7 @@ from fastai.vision.all import *
 
 
 url = ("http://dl.dropboxusercontent.com/s/tdje4uu2getcbno/huvec.pt?raw=1")
-filename = "best.pt"
+filename = "huvec.pt"
 urlretrieve(url,filename)
 
 
