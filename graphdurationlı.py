@@ -1,3 +1,6 @@
+
+__author__ = "Mehmet Değirmenci"
+
 import streamlit as st
 from PIL import Image
 from urllib.request import urlretrieve
