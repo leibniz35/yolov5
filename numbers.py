@@ -28,7 +28,7 @@ st.write('Currently only works when a single number is loaded')
 
 
 
-uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
+uploaded_file = st.file_uploader("Upload Files",type=['jpeg', 'jpg'])
 
 
 
