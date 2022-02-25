@@ -23,7 +23,7 @@ filenamee = "1.png"
 urlretrieve(urll,filenamee)
 st.image(filenamee)
 st.write('# Digital Number detection')
-st.write('It works just one number now')
+st.write('Currently only works when a single number is loaded')
 
 
 
