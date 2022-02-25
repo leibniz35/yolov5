@@ -22,7 +22,7 @@ urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
 filenamee = "1.png"
 urlretrieve(urll,filenamee)
 st.image(filenamee)
-st.write('# Digital Number detection')
+st.write('# Digital Number Detection')
 st.write('Currently only works when a single number is loaded')
 
 
