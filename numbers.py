@@ -53,17 +53,17 @@ else:
 st.write('# Metrics of the model')
 
 st.write('mAP')
-urll = ("http://dl.dropboxusercontent.com/s/pnd6p3zbibx6ofa/map.png?raw=1")
+urlll = ("http://dl.dropboxusercontent.com/s/pnd6p3zbibx6ofa/map.png?raw=1")
 filenamee = "map.png"
-urlretrieve(urll,filenameee)
+urlretrieve(urlll,filenameee)
 st.image(filenameee)
     
 st.write('Losses')
     
 
-urll = ("http://dl.dropboxusercontent.com/s/0sveaoty719d2ie/losses.png?raw=1")
+urllll = ("http://dl.dropboxusercontent.com/s/0sveaoty719d2ie/losses.png?raw=1")
 filenamee = "losses.png"
-urlretrieve(urll,filenameeee)
+urlretrieve(urllll,filenameeee)
 st.image(filenameeee)
     
     
