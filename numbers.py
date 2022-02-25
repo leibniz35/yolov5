@@ -56,7 +56,8 @@ st.write('mAP')
 url3 = ("http://dl.dropboxusercontent.com/s/pnd6p3zbibx6ofa/map.png?raw=1")
 filenameee = "map.png"
 urlretrieve(url3,filenameee)
-st.button(st.image(filenameee))
+if st.button('Find Blueprint'):
+    st.image(filenameee)
     
 st.write('Losses')
     
@@ -64,7 +65,7 @@ st.write('Losses')
 url4 = ("http://dl.dropboxusercontent.com/s/0sveaoty719d2ie/losses.png?raw=1")
 filenameeee = "losses.png"
 urlretrieve(url4,filenameeee)
-st.button(st.image(filenameeee))
+
 
     
     
