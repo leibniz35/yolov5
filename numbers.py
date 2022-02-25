@@ -48,4 +48,25 @@ else:
     model.results.save("yolov5/results")
     model.results.save()
     st.image("yolov5/results/image0.jpg")
-    ######
+    
+    
+st.write('# Metrics of the model')
+
+st.write('mAP')
+urll = ("http://dl.dropboxusercontent.com/s/pnd6p3zbibx6ofa/map.png?raw=1")
+filenamee = "map.png"
+urlretrieve(urll,filenameee)
+st.image(filenameee)
+    
+st.write('Losses')
+    
+
+urll = ("http://dl.dropboxusercontent.com/s/0sveaoty719d2ie/losses.png?raw=1")
+filenamee = "losses.png"
+urlretrieve(urll,filenameeee)
+st.image(filenameeee)
+    
+    
+    
+    
+    
