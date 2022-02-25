@@ -41,8 +41,8 @@ else:
     image = Image.open(uploaded_file)
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
-    model.conf = 0.4
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
+    model.conf = 0.3
     
     model.results = model(img_array, size=512)
     model.results.save("yolov5/results")
