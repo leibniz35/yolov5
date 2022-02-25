@@ -15,6 +15,7 @@ url = ("http://dl.dropboxusercontent.com/s/f1gk6iuvmbxfb1c/numbers.pt?raw=1")
 filename = "numbers.pt"
 urlretrieve(url,filename)
 
+st.markdown("[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)")
 
 
 urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
