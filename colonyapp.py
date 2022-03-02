@@ -10,9 +10,8 @@ from fastai.vision.all import *
 
 
 
-
-url = ("http://dl.dropboxusercontent.com/s/w20vwd3bu7fo4ut/best.pt?raw=1")
-filename = "best.pt"
+url = ("http://dl.dropboxusercontent.com/s/puam7atr8213pks/colony.pt?raw=1")
+filename = "colony.pt"
 urlretrieve(url,filename)
 
 
@@ -21,7 +20,7 @@ urll = ("http://dl.dropboxusercontent.com/s/ecl4tj6q2u8s4q3/fig-03_5.png?raw=1")
 filenamee = "1.png"
 urlretrieve(urll,filenamee)
 st.image(filenamee)
-st.write('# LEUKEMIA DETECTION PLATFORM ')
+st.write('# COLONY COUNTER ')
 
 
 
@@ -39,8 +38,8 @@ else:
     image = Image.open(uploaded_file)
     img_array = np.array(image)
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=filename)
-    model.conf = 0.75
-    #model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
+    model.conf = 0.40
+    model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
     
     model.results = model(img_array, size=512)
     model.results.save("yolov5/results")
