@@ -91,7 +91,7 @@ else:
                 liste0.append(k)
             
 
-    st.write("Number of colony detected:")
+    st.write("Number of colony detected:",len(liste0) +len(liste1) +len(liste2) +len(liste3) +len(liste4) +len(liste5) +len(liste6))
    
     
     
