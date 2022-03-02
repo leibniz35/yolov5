@@ -65,6 +65,10 @@ else:
     liste1 = []
     liste2 = []
     liste0 = []
+    liste3 = []
+    liste4 = []
+    liste5 = []
+    liste6 = []
 
 
     for i in model.results.xywh:
@@ -75,9 +79,17 @@ else:
                 liste2.append(k)
             elif k == 1:
                 liste1.append(k)
+            elif k == 3:
+                liste3.append(k)
+            elif k == 4:
+                liste4.append(k)
+            elif k == 5:
+                liste5.append(k) 
+            elif k == 6:
+                liste6.append(k)
             elif k == 0:
                 liste0.append(k)
-
+            
 
     st.write("Number of colony detected:")
    
