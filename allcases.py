@@ -92,3 +92,16 @@ else:
     st.write("Inhale:",len(liste0))
     st.write("Exhale:",len(liste1))
     st.write("Duration:",len(liste2))
+    
+    
+    
+    
+    
+    
+
+    
+urll = ("http://dl.dropboxusercontent.com/s/pcp3jr0t8pyftcr/allmap.png?raw=1")
+filenamee = "allmap.png"
+urlretrieve(urll,filenamee)
+st.image(filenamee)
+st.write('# mAP')
