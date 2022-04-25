@@ -99,9 +99,3 @@ else:
     
     
 
-    
-urll = ("http://dl.dropboxusercontent.com/s/pcp3jr0t8pyftcr/allmap.png?raw=1")
-filenamee = "allmap.png"
-urlretrieve(urll,filenamee)
-st.image(filenamee)
-st.write('# mAP')
