@@ -42,8 +42,8 @@ else:
     model.conf = st.sidebar.slider("Confidence threshold", 0.0, 1.0, 0.5, 0.01)
     
     model.results = model(img_array, size=512)
-    #model.results.save("yolov5/results")
-    model.results.save()
+    model.results.save("yolov5/results")
+    #model.results.save()
     #st.image("yolov5/results/*image0.jpg")
     ######
    
