@@ -4,8 +4,8 @@ __author__ = "Mehmet Değirmenci"
 import streamlit as st
 from PIL import Image
 from urllib.request import urlretrieve
-from fastai.vision.widgets import *
-from fastai.vision.all import *
+import numpy as np
+import torch
 
 
 
